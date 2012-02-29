@@ -14,7 +14,7 @@ import redis
 # Definitely cannot assume that everythign will work in ~.  Find for now, but definitely abstract
 # Right now, this will get confused if we have more than 1 repository that we are working with (It's using a single, hard coded virtualenv.
 # don't assume that sourcing the activate file is going to do the right thing.  Instead explicitly specify the path of the script you want. . . i.e., for python do: "{0}/bin/python".format(virtualenvdir)
-# For the location of the union mount, you can create some temporary directory.  So, you create a hash of some variety, then create a temp dir named after that hash somewhere (/mnt, or somewhere else is totally fine.  really make it configurable.  So the ephemeral storage should be generated using NamedTemporaryDirectory, probably and then use the version/app hash for the aufs mount dir.  
+# For the location of the union mount, you can create some temporary directory.  So, you create a hash of some variety, then create a temp dir named after that hash somewhere (/mnt, or somewhere else is totally fine.  really make it configurable.  So the ephemeral storage should be generated using tempfile.mkdtemp, probably and then use the version/app hash for the aufs mount dir.  
 # Definitely move the test code out of here and in to a test module of some kind.  Look at unittest and nose for a way of automating the tests.  
 # I've added a setup.py and requirements.txt (might as well eat our own dog food :) ).
 
