@@ -1,5 +1,5 @@
 Rename post-receive.py to post-receive and place in the your hooks folder. 
-Then make push the bottle_test folder. You will need to enter the password for the hosts in post-receive. 
+Then push the bottle_test folder. You will need to enter the password for the hosts in post-receive. 
 
 Things TODO
 # Integrate with SSH Keys
