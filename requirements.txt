@@ -1,0 +1,4 @@
+Fabric==1.4.0
+pycrypto==2.5
+redis==2.4.11
+ssh==1.7.13
